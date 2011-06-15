@@ -1,5 +1,7 @@
 #light
 
+printfn "Simple F# test program"
+
 let halfway a b =
  let dif = b - a
  let mid = dif / 2
