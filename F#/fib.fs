@@ -5,7 +5,6 @@ let rec fib x =
  | 2 -> 1
  | x -> fib (x - 1) + fib(x - 2)
  
- 
 printfn "(fib 2) = %i" (fib 2)
 printfn "(fib 6) = %i" (fib 6)
 printfn "(fib 15) = %i" (fib 15)

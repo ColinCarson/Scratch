@@ -19,5 +19,4 @@ let mathsPuzzle()=
   let x = x - 10500
   printfn "Date of birth (ddmmyy): %i" x
   
-  
 mathsPuzzle()
