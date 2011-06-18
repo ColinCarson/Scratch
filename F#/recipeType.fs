@@ -1,5 +1,5 @@
 #light
-
+// example of custom type
 type recipe =
   { recipeName : string;
     ingredients : ingredient list;
