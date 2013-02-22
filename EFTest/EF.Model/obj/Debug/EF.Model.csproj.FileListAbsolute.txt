@@ -1,0 +1,8 @@
+C:\Projects\Data\EFTest\EF.Model\bin\Debug\EF.Model.dll.config
+C:\Projects\Data\EFTest\EF.Model\bin\Debug\EF.Model.dll
+C:\Projects\Data\EFTest\EF.Model\bin\Debug\EF.Model.pdb
+C:\Projects\Data\EFTest\EF.Model\bin\Debug\EntityFramework.dll
+C:\Projects\Data\EFTest\EF.Model\bin\Debug\EntityFramework.xml
+C:\Projects\Data\EFTest\EF.Model\obj\Debug\EF.Model.csprojResolveAssemblyReference.cache
+C:\Projects\Data\EFTest\EF.Model\obj\Debug\EF.Model.dll
+C:\Projects\Data\EFTest\EF.Model\obj\Debug\EF.Model.pdb
