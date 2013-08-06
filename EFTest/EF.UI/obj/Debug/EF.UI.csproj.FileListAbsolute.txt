@@ -11,3 +11,16 @@ C:\Projects\Data\EFTest\EF.UI\obj\Debug\EF.UI.Properties.Resources.resources
 C:\Projects\Data\EFTest\EF.UI\obj\Debug\EF.UI.csproj.GenerateResource.Cache
 C:\Projects\Data\EFTest\EF.UI\obj\Debug\EF.UI.exe
 C:\Projects\Data\EFTest\EF.UI\obj\Debug\EF.UI.pdb
+C:\Projects\Scratch\EFTest\EF.UI\bin\Debug\EF.UI.exe.config
+C:\Projects\Scratch\EFTest\EF.UI\obj\Debug\EF.UI.exe
+C:\Projects\Scratch\EFTest\EF.UI\obj\Debug\EF.UI.pdb
+C:\Projects\Scratch\EFTest\EF.UI\bin\Debug\EF.UI.exe
+C:\Projects\Scratch\EFTest\EF.UI\bin\Debug\EF.UI.pdb
+C:\Projects\Scratch\EFTest\EF.UI\obj\Debug\EF.UI.csprojResolveAssemblyReference.cache
+C:\Projects\Scratch\EFTest\EF.UI\obj\Debug\MainWindow.baml
+C:\Projects\Scratch\EFTest\EF.UI\obj\Debug\MainWindow.g.cs
+C:\Projects\Scratch\EFTest\EF.UI\obj\Debug\App.g.cs
+C:\Projects\Scratch\EFTest\EF.UI\obj\Debug\EF.UI_MarkupCompile.cache
+C:\Projects\Scratch\EFTest\EF.UI\obj\Debug\EF.UI.g.resources
+C:\Projects\Scratch\EFTest\EF.UI\obj\Debug\EF.UI.Properties.Resources.resources
+C:\Projects\Scratch\EFTest\EF.UI\obj\Debug\EF.UI.csproj.GenerateResource.Cache

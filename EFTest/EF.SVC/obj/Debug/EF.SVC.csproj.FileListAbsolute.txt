@@ -4,3 +4,9 @@ C:\Projects\Data\EFTest\EF.SVC\bin\Debug\EF.SVC.pdb
 C:\Projects\Data\EFTest\EF.SVC\obj\Debug\EF.SVC.csprojResolveAssemblyReference.cache
 C:\Projects\Data\EFTest\EF.SVC\obj\Debug\EF.SVC.exe
 C:\Projects\Data\EFTest\EF.SVC\obj\Debug\EF.SVC.pdb
+C:\Projects\Scratch\EFTest\EF.SVC\bin\Debug\EF.SVC.exe.config
+C:\Projects\Scratch\EFTest\EF.SVC\bin\Debug\EF.SVC.exe
+C:\Projects\Scratch\EFTest\EF.SVC\bin\Debug\EF.SVC.pdb
+C:\Projects\Scratch\EFTest\EF.SVC\obj\Debug\EF.SVC.csprojResolveAssemblyReference.cache
+C:\Projects\Scratch\EFTest\EF.SVC\obj\Debug\EF.SVC.exe
+C:\Projects\Scratch\EFTest\EF.SVC\obj\Debug\EF.SVC.pdb
