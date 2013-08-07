@@ -30,10 +30,13 @@ namespace EFTriggers
             {
                 context.Configurations.Add(configuration);
                 context.SaveChanges();
+
+                configuration.Name = string.Format("New Name {0}", timeStamp);
+                context.SaveChanges();
+
+                context.Configurations.Remove(configuration);
+                context.SaveChanges();
             }
-
-
-
 
             Console.WriteLine("Press enter to exit...");
             Console.ReadLine();

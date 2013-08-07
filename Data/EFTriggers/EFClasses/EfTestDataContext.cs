@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 
 namespace EFTriggers.EFClasses
@@ -62,7 +63,7 @@ namespace EFTriggers.EFClasses
                     TableName = tableName,
                     ObjectID = dbEntityEntry.CurrentValues.GetValue<object>(keyName).ToString(),
                     ColumnName = "ALL",
-                    NewValue = "banana"
+                    NewValue = JsonConvert.SerializeObject(dbEntityEntry.CurrentValues, Formatting.None, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore })
                 });
             }
 
@@ -75,9 +76,9 @@ namespace EFTriggers.EFClasses
                     EventDateUTC = DateTime.Now.ToUniversalTime(),
                     EventType = "Deleted",
                     TableName = tableName,
-                    ObjectID = dbEntityEntry.CurrentValues.GetValue<object>(keyName).ToString(),
+                    ObjectID = dbEntityEntry.OriginalValues.GetValue<object>(keyName).ToString(),
                     ColumnName = "ALL",
-                    NewValue = "banana"
+                    OriginalValue = JsonConvert.SerializeObject(dbEntityEntry.OriginalValues, Formatting.None, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore })
                 });
             }
 
@@ -92,7 +93,7 @@ namespace EFTriggers.EFClasses
                     TableName = tableName,
                     ObjectID = dbEntityEntry.CurrentValues.GetValue<object>(keyName).ToString(),
                     ColumnName = "ALL",
-                    NewValue = "banana"
+                    NewValue = JsonConvert.SerializeObject(dbEntityEntry.CurrentValues, Formatting.None, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore })
                 });
             }
 
