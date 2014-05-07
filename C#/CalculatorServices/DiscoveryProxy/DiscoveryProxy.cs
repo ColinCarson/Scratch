@@ -47,7 +47,7 @@ namespace DiscoveryProxyExample
         protected override void OnEndFind(IAsyncResult result)
         {
             OnFindAsyncResult.End(result);
-        }
+        }        
 
         protected override IAsyncResult OnBeginResolve(ResolveCriteria resolveCriteria, AsyncCallback callback, object state)
         {
@@ -111,7 +111,7 @@ namespace DiscoveryProxyExample
             }
             return matchingEndpoint;
         }
-
+        
         void PrintDiscoveryMetadata(EndpointDiscoveryMetadata endpointDiscoveryMetadata, string verb)
         {
             Console.WriteLine("\n**** " + verb + " service of the following type from cache. ");

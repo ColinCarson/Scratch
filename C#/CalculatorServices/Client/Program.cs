@@ -38,7 +38,7 @@ namespace Client
             Uri probeEndpointAddress = new Uri("net.tcp://localhost:8001/Probe");
             DiscoveryEndpoint discoveryEndpoint = new DiscoveryEndpoint(new NetTcpBinding(), new EndpointAddress(probeEndpointAddress));
 
-            DiscoveryClient discoveryClient = new DiscoveryClient(discoveryEndpoint);
+            DiscoveryClient discoveryClient = new DiscoveryClient(discoveryEndpoint);            
 
             Console.WriteLine("Finding ICalculatorService endpoints using the proxy at {0}", probeEndpointAddress);
             Console.WriteLine();
@@ -59,9 +59,6 @@ namespace Client
             {
                 Console.WriteLine("This client was unable to connect to and query the proxy. Ensure that the proxy is up and running.");
             }
-
-            Console.WriteLine("Press <ENTER> to exit.");
-            Console.ReadLine();
         }
     }
 }
