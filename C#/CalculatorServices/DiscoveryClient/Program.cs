@@ -58,6 +58,10 @@ namespace DiscoveryApp
             {
                 InvokeCalculatorService(endpointAddress);
             }
+            else
+            {
+                Console.WriteLine("Unable to locate a service that matched the find criteria");
+            }
 
             Console.WriteLine("Press <ENTER> to exit.");
             Console.ReadLine();
