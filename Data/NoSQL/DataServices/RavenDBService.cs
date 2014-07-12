@@ -12,10 +12,10 @@ namespace DataServices
 {
     public class RavenDBService : IRavenDBProvider
     {
-        public void Connect()
+        public void OpenSession(string databasename)
         {
             var ravenDB = new RavenDB();
-            ravenDB.Connect();
+            ravenDB.OpenSession(databasename);
         }
     }
 }

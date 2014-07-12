@@ -12,6 +12,6 @@ namespace Contracts
     public interface IRedisProvider
     {
         [OperationContract]
-        void Connect();
+        void OpenSession();
     }
 }

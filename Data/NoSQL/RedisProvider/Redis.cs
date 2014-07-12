@@ -10,7 +10,7 @@ namespace RedisProvider
 {
     public class Redis : IRedisProvider
     {
-        public void Connect()
+        public void OpenSession()
         {
             throw new NotImplementedException();
         }

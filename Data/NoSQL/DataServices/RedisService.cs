@@ -12,10 +12,10 @@ namespace DataServices
 {
      public class RedisService : IRedisProvider
     {
-        public void Connect()
+        public void OpenSession()
         {
             var redis = new Redis();
-            redis.Connect();
+            redis.OpenSession();
         }
     }
 }

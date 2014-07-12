@@ -10,7 +10,12 @@ namespace RavenDBProvider
 {
     public class RavenDB : IRavenDBProvider
     {
-        public void Connect()
+        public void OpenSession()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OpenSession(string databasename)
         {
             throw new NotImplementedException();
         }

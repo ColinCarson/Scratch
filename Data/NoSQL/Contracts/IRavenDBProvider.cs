@@ -12,6 +12,6 @@ namespace Contracts
     public interface IRavenDBProvider
     {
         [OperationContract]
-        void Connect();
+        void OpenSession(string database);
     }
 }

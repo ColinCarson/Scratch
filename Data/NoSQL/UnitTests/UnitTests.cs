@@ -4,16 +4,20 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTests
 {
     [TestClass]
-    public class ConnefctionTests
+    public class RavenDBSessionTests
     {
         [TestMethod]
-        public void TestRavenDBConnection()
+        public void OpenRavenDBSessionOnSpecificDatabase()
         {
             throw new NotImplementedException();
         }
+    }
 
+    [TestClass]
+    public class RedisSessionTests
+    {
         [TestMethod]
-        public void TestRedisConnection()
+        public void OpenRedisSession()
         {
             throw new NotImplementedException();
         }
