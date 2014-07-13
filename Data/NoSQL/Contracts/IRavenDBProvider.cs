@@ -5,13 +5,20 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
+using Model;
+
 namespace Contracts
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IRavenDBProvider" in both code and config file together.
     [ServiceContract]
     public interface IRavenDBProvider
     {
         [OperationContract]
-        void OpenSession(string database);
+        long PostTrialData(RavenConnection ravenConnection, TrialData trialData);
+
+        [OperationContract]
+        long BulkInsertTrialData(RavenConnection ravenConnection, IEnumerable<TrialData> trialBatch);
+
+        [OperationContract]
+        TrialData ReadTrialData(RavenConnection ravenConnection);
     }
 }

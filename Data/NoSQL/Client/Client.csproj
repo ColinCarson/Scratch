@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
@@ -45,28 +46,27 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\RavenDBService\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\RedisService\Reference.cs">
+    <Compile Include="Service References\RavenDBProvider\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="Service References\RavenDBService\service.wsdl" />
-    <None Include="Service References\RavenDBService\service.xsd">
+    <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\RavenDBService\service1.xsd">
+    <None Include="Service References\RavenDBProvider\Client.RavenDBProvider.TrialData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RavenDBProvider\Model.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\RedisService\service.wsdl" />
-    <None Include="Service References\RedisService\service.xsd">
+    <None Include="Service References\RavenDBProvider\service.wsdl" />
+    <None Include="Service References\RavenDBProvider\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RavenDBProvider\service1.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
@@ -74,32 +74,33 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\RavenDBService\" />
-    <WCFMetadataStorage Include="Service References\RedisService\" />
+    <WCFMetadataStorage Include="Service References\RavenDBProvider\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\RavenDBService\configuration91.svcinfo" />
+    <None Include="Service References\RavenDBProvider\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\RavenDBService\configuration.svcinfo" />
+    <None Include="Service References\RavenDBProvider\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\RavenDBService\Reference.svcmap">
+    <None Include="Service References\RavenDBProvider\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\RedisService\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\RedisService\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\RedisService\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
+    <ProjectReference Include="..\Contracts\Contracts.csproj">
+      <Project>{cb184049-dfbc-4d22-8b8d-6cdb29e441d3}</Project>
+      <Name>Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{6965d2ed-bb6b-46df-9a76-d58dc36a8780}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RavenDBProvider\RavenDBProvider.csproj">
+      <Project>{d1fa49fc-f6f1-4b7d-96fd-320f9a5e5edb}</Project>
+      <Name>RavenDBProvider</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

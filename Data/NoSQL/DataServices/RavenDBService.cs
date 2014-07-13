@@ -6,16 +6,28 @@ using System.ServiceModel;
 using System.Text;
 
 using Contracts;
+using Model;
 using RavenDBProvider;
 
 namespace DataServices
 {
     public class RavenDBService : IRavenDBProvider
     {
-        public void OpenSession(string databasename)
+        public long PostTrialData(RavenConnection ravenConnection, TrialData trialData)
         {
             var ravenDB = new RavenDB();
-            ravenDB.OpenSession(databasename);
+            return ravenDB.PostTrialData(ravenConnection, trialData);
+        }
+
+        public long BulkInsertTrialData(RavenConnection ravenConnection, IEnumerable<TrialData> trialBatch)
+        {
+            var ravenDB = new RavenDB();
+            return ravenDB.BulkInsertTrialData(ravenConnection, trialBatch);
+        }
+
+        public TrialData ReadTrialData(RavenConnection ravenConnection)
+        {
+            throw new NotImplementedException();
         }
     }
 }

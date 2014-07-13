@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
@@ -50,12 +51,18 @@
     <Compile Include="RedisService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Contracts\Contracts.csproj">
       <Project>{cb184049-dfbc-4d22-8b8d-6cdb29e441d3}</Project>
       <Name>Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{6965d2ed-bb6b-46df-9a76-d58dc36a8780}</Project>
+      <Name>Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\RavenDBProvider\RavenDBProvider.csproj">
       <Project>{d1fa49fc-f6f1-4b7d-96fd-320f9a5e5edb}</Project>

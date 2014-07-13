@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Parameter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RavenConnection.cs" />
     <Compile Include="TrialData.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

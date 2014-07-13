@@ -33,6 +33,9 @@
     <Reference Include="Raven.Abstractions">
       <HintPath>..\packages\RavenDB.Client.2.5.2879\lib\net45\Raven.Abstractions.dll</HintPath>
     </Reference>
+    <Reference Include="Raven.Client.Embedded">
+      <HintPath>..\..\..\..\Services\RavenDB-Build-2879\EmbeddedClient\Raven.Client.Embedded.dll</HintPath>
+    </Reference>
     <Reference Include="Raven.Client.Lightweight">
       <HintPath>..\packages\RavenDB.Client.2.5.2879\lib\net45\Raven.Client.Lightweight.dll</HintPath>
     </Reference>
@@ -53,6 +56,10 @@
     <ProjectReference Include="..\Contracts\Contracts.csproj">
       <Project>{cb184049-dfbc-4d22-8b8d-6cdb29e441d3}</Project>
       <Name>Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{6965d2ed-bb6b-46df-9a76-d58dc36a8780}</Project>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
