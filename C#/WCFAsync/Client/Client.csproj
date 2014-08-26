@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4E229489-DA84-4F4B-B7F1-E5C650AFA010}</ProjectGuid>
+    <ProjectGuid>{2A39008C-47D0-4B93-9CA0-55707099981A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Client</RootNamespace>
@@ -33,9 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,25 +46,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Contracts\Contracts.csproj">
-      <Project>{cb184049-dfbc-4d22-8b8d-6cdb29e441d3}</Project>
+      <Project>{49272702-3c8f-4392-8a4b-bf7bc1065836}</Project>
       <Name>Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{6965d2ed-bb6b-46df-9a76-d58dc36a8780}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RavenDBProvider\RavenDBProvider.csproj">
-      <Project>{d1fa49fc-f6f1-4b7d-96fd-320f9a5e5edb}</Project>
-      <Name>RavenDBProvider</Name>
+    <ProjectReference Include="..\Proxy\Proxy.csproj">
+      <Project>{fc5c3fc7-fab0-4bb2-a315-972776dfd88b}</Project>
+      <Name>Proxy</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

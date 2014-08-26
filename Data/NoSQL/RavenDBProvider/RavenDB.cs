@@ -10,6 +10,7 @@ using Model;
 using Raven.Client;
 using Raven.Client.Document;
 using Raven.Client.Embedded;
+using Raven.Client.Indexes;
 
 namespace RavenDBProvider
 {
@@ -56,6 +57,13 @@ namespace RavenDBProvider
             watch.Start();
             
             InitializeDocumentStore(ravenConnection.ServerUrl);
+            //documentStore.DatabaseCommands.PutIndex("TrialData/ByStressNumber",
+            //                                        new IndexDefinitionBuilder<TrialData>
+            //                                        {
+            //                                            Map = x => from item in trialBatch
+            //                                                           select new { item.StressNumber }
+            //                                        });
+
             using(var bulkInsert = documentStore.BulkInsert(ravenConnection.DatabaseName))
             {
                 foreach (var item in trialBatch)
