@@ -10,11 +10,11 @@
     {
         public static void Main(string[] args)
         {
-            GetResult();
+            AsyncOperation();
             Console.ReadLine();
         }
 
-        private async static void GetResult()
+        private async static void AsyncOperation()
         {
             var client = new Proxy("AsyncService");
             Console.WriteLine("Calling AsyncService DoThings(withStuff)");
